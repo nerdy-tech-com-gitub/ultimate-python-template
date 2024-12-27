@@ -1,0 +1,19 @@
+[project]
+# https://docs.astral.sh/uv/concepts/projects/config/
+name = "python-template-zuppif"
+version = "0.1.2"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["requests>=2.32.3"]
+
+[dependency-groups]
+dev = ["pytest>=8.3.4", "ruff>=0.8.4"]
+
+[tool.ruff]
+# https://docs.astral.sh/ruff/configuration/
+target-version = "py312"
+
+[project.scripts]
+# will run the function by just typing `make_me_laugh` in the cli
+make_me_laugh = "jokes:make_me_laugh"
